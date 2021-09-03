@@ -1,0 +1,51 @@
+// Use this with VS Code Rest Client
+// https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+@api = $API_URL
+@id =
+@token =
+
+// Test 404 (no such route)
+GET {{api}}/no-bananas
+
+###
+
+// Get /$ROUTE
+GET {{api}}/$ROUTE
+
+###
+
+// Get /$ROUTE(w/pagination)
+GET {{api}}/$ROUTE?page=1
+
+###
+
+// POST /$ROUTE
+POST {{api}}/$ROUTE
+Content-Type: application/json
+
+{
+  // Add JSON to post here.
+}
+
+###
+
+// GET /$ROUTE/{{id}}
+GET {{api}}/$ROUTE/{{id}}
+
+###
+
+// PATCH /$ROUTE/{{id}}
+PATCH {{api}}/$ROUTE/{{id}}
+Content-Type: application/json
+
+{
+  // Add JSON to update here.
+}
+
+###
+
+// DELETE /$ROUTE/{{id}}
+DELETE {{api}}/$ROUTE/{{id}}
+
+###

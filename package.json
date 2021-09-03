@@ -1,0 +1,29 @@
+{
+  "name": "~TODO~",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "route": "./script/route.js",
+    "crud": "./script/crud.js",
+    "snip": "./script/snip.js"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "next",
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.5",
+    "postcss-load-config": "^3.1.0",
+    "prompt-sync": "^4.2.0",
+    "svelte": "^3.34.0",
+    "svelte-preprocess": "^4.7.4",
+    "tailwindcss": "^2.2.4"
+  },
+  "type": "module",
+  "dependencies": {
+    "@mdi/js": "^5.9.55",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.0",
+    "slugify": "^1.6.0"
+  }
+}
